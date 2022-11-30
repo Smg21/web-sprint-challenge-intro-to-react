@@ -4,6 +4,9 @@
 This challenge allows you to practice the concepts and techniques learned over the past sprint and apply them in a concrete project. This sprint explored **introductory React**. During this sprint, you studied **React components and advanced styling**.
 
 In your challenge you will demonstrate your mastery of these skills by creating **a Star Wars page** using data from an API.
+This is an individual assessment. All work must be your own. All projects will be submitted to Codegrade for automated review.
+
+You are not allowed to collaborate during the sprint challenge.
 
 
 ### Project Set Up
