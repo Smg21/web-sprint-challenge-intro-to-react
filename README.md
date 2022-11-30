@@ -68,6 +68,11 @@ After finishing your required elements, you can push your work further. These go
 ## Stretch Interview Questions
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React.Js is a JavaScript Library That is Free and Open Sourced. The main problems that it solves would be the development of large applications that have temporal data changes such as liking posts on Facebook or Instagram. React allows for this process to go smoother and is able to better keep up with the many frequent upvotes or downvotes. 
 1. Describe component state.
+The state is a built-in React object that is used to contain data or information about the component. 
 1. Describe props.
+ Props are used to pass data from a parent component to a child component. They are similar to function arguments in Javascript. 
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+A "side effect" is anything that affects something outside the scope of the function being executed. I believe an example could be with using useEFfect.
+Whenever props within useEffect Changes it sets the state inside useEffect. 
