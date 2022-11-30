@@ -1,18 +1,17 @@
 import { useState, useEffect} from 'react';
 import axios from "axios";
 
-//import "./styles.css";
+import Character from "./components/Character";
 
-import Characters from "./components/Character";
-
-const App = () => {
+ const App = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
     axios
-      .get("https://reqres.in/api/users")
+      .get("https://swapi.dev/api/people/")
       .then((res) => {
-        
+        console.log(res);
+        setUsers(res.data);
       })
       .catch((err) => console.log("😵 GET FAILED...", err));
   }, []);
@@ -25,7 +24,20 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
       <main className="container">
-        
+        {users.map((element) => {
+          return (
+            <Character 
+            key = {element.id}
+            name = {element.name}
+            height = {element.height}
+            mass = {element.mass}
+            skin_color = {element.skin_color}
+            gender = {element.gender}
+            birth_year = {element.birth_year}
+            eye_color = {element.eye_color}
+            />
+          );
+        })}
       </main>
     </div>
   );

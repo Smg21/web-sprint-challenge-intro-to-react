@@ -27,7 +27,7 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ### Instructions
 
-Your finished project must include all of the following requirements:
+Your finished project must include all of the following requirements:https://swapi.dev/api/people/
 
 - [ ] Use the endpoint `[GET] https://swapi.dev/api/people/` (mocked in [msw](https://github.com/mswjs/msw)) to obtain characters.
 - [ ] Set the list of characters into state.
