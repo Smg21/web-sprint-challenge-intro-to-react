@@ -1,14 +1,21 @@
 // Write your Character component here
+import {Title, Name, Info} from './Styled.js';
 export default function Character(props){
     return (
         <div className="Character">
-            <h2>{props.name}</h2>
-        <p>{props.height}</p>
-            <p>{props.mass}</p>
-            <p>{props.skin_color}</p>
-            <p>{props.gender}</p>
-            <p>{props.birth_year}</p>
-            <p>{props.eye_color}</p>
+            <Name>{props.name}</Name>
+            <Title>HEIGHT</Title>
+            <Info>{props.height}</Info>
+            <Title>MASS</Title>
+            <Info>{props.mass}</Info>
+            <Title>SKIN-COLOR</Title>
+            <Info>{props.skin_color}</Info>
+            <Title>GENDER</Title>
+            <Info>{props.gender}</Info>
+            <Title>BIRTH-YEAR</Title>
+            <Info>{props.birth_year}</Info>
+            <Title>EYE-COLOR</Title>
+            <Info>{props.eye_color}</Info>
            
             
         </div>

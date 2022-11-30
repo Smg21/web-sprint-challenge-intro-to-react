@@ -1,7 +1,10 @@
 import { useState, useEffect} from 'react';
 import axios from "axios";
 
+
 import Character from "./components/Character";
+
+
 
  const App = () => {
   const [users, setUsers] = useState([]);
@@ -22,6 +25,7 @@ import Character from "./components/Character";
 
   return (
     <div className="App">
+      
       <h1 className="Header">Characters</h1>
       <main className="container">
         {users.map((element) => {
@@ -39,6 +43,7 @@ import Character from "./components/Character";
           );
         })}
       </main>
+      
     </div>
   );
 }
